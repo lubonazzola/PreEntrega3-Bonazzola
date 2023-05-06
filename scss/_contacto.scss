@@ -1,0 +1,63 @@
+#icon-location, #icon-envelope, #icon-phone {
+    height: $iconos-medianos;
+    width: $iconos-medianos;
+}
+
+.contacto {
+    display: grid;
+    grid-template-areas:
+    "datos"
+    "mapa";
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: $desktop) {
+    .contacto {
+        display: grid;
+        grid-template-areas:
+        "datos mapa";
+        grid-template-columns: 1;
+        grid-template-rows: 1;
+        column-gap: 60px;
+    }
+}
+
+.datos {
+    text-align: center;
+}
+
+.formulario {
+    font-family: $fuente-cuerpo;
+    font-weight: $fuente-mediana;
+    font-size: medium;
+    text-align: center;
+}
+
+label {
+    font-weight: $fuente-grande;
+}
+
+@media (min-width: $desktop) {
+    .grid-contacto {
+        display: grid;
+        grid-template-areas:
+        "nombreyapellido correo";
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        column-gap: $espacio-mediano;
+        justify-content: center;
+        align-items: center;
+        padding: $espacio-chico;
+    }
+
+    .mensaje {
+        text-align: center;
+    }
+
+    .enviar {
+        text-align: center;
+    }
+}

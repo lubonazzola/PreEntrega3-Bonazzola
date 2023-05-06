@@ -1,0 +1,76 @@
+.card-img {
+    height: 600px;
+    width: 100%;
+}
+
+.card-title, .card-text {
+    color: $color-letras;
+    text-align: center;
+}
+
+.grid-cake {
+    display: grid;
+    grid-template-areas:
+    "cake1"
+    "cake2";
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    row-gap: $espacio-chico;
+    text-align: left;
+    padding: $espacio-extrachico;
+}
+
+@media (min-width: $desktop) {
+    .grid-cake {
+        display: grid;
+        grid-template-areas:
+        "cake1 cake2";
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        column-gap: 180px;
+        text-align: left;
+        align-items: center;
+        padding: $espacio-mediano;
+    }
+}
+
+.cake2 iframe {
+    max-width: 100%;
+}
+
+.img1, .papas, .img2, .budin {
+    padding: $espacio-mediano;
+}
+
+.grid-stars {
+    display: grid;
+    grid-template-areas:
+    "papas"
+    "img1"
+    "budin"
+    "img2";
+    grid-template-columns: 1;
+    grid-template-rows: 4;
+    row-gap: $espacio-chico;
+    text-align: center;
+    padding: $espacio-extrachico;
+}
+
+@media (min-width: $desktop) {
+    .grid-stars {
+        display: grid;
+        grid-template-areas:
+        "img1 papas"
+        "budin img2";
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+        column-gap: $espacio-mediano;
+        row-gap: $espacio-mediano;
+        padding: $espacio-chico;
+        text-align: left;
+    }
+}
+
+#tarjeta1, #tarjeta2, #tarjeta3 {
+    background-color: $color-terciario;
+}

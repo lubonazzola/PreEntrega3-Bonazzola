@@ -1,0 +1,70 @@
+.carousel-inner {
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-icons {
+    display: grid;
+    grid-template-areas:
+    "icon1"
+    "icon2"
+    "icon3";
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    row-gap: $espacio-mediano;
+    text-align: center;
+}
+
+@media (min-width: $tablet) {
+    .grid-icons {
+        display: grid;
+        grid-template-areas:
+        "icon1 icon2 icon3";
+        grid-template-columns: 3;
+        grid-template-rows: 1;
+        column-gap: $espacio-grande;
+        text-align: center;
+        padding: $espacio-chico;
+    }
+}
+
+.grid-pancakes {
+    display: grid;
+    grid-template-areas:
+    "pancakes1"
+    "pancakes2";
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    row-gap: $espacio-chico;
+    text-align: left;
+    padding: $espacio-extrachico;
+}
+
+@media (min-width: $desktop) {
+    .grid-pancakes {
+        display: grid;
+        grid-template-areas:
+        "pancakes1 pancakes2";
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        column-gap: 180px;
+        text-align: left;
+        align-items: center;
+        padding: $espacio-mediano;
+    }
+}
+
+.pancakes2 iframe {
+    max-width: 100%;
+}
+
+.grid-quote {
+    background-color: $color-terciario;
+    display: grid;
+    grid-template-areas:
+    "quote1"
+    "quote2";
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    text-align: center;
+}

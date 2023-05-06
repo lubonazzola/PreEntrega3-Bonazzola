@@ -1,0 +1,67 @@
+.intro {
+    display: grid;
+    grid-template-areas:
+    "bio"
+    "nutri";
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    text-align: center;
+    align-items: center;
+    padding: $espacio-chico;
+}
+
+.nutri img {
+    height: 300px;
+    width: 100%;
+}
+
+@media (min-width: $desktop) {
+    .intro {
+        display: grid;
+        grid-template-areas:
+        "bio nutri";
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        column-gap: $espacio-mediano;
+        padding: $espacio-chico;
+    }
+
+    .nutri img {
+        margin: 0;
+        height: 150px;
+        width: 100%;
+    }
+}
+
+#green {
+    background-color: $color-secundario;
+}
+
+.grid-methods {
+    display: grid;
+    grid-template-areas:
+    "inperson"
+    "virtual";
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    row-gap: $espacio-mediano;
+    text-align: center;
+    padding-bottom: $espacio-chico;
+}
+
+@media (min-width: $tablet) {
+    .grid-methods {
+        display: grid;
+        grid-template-areas:
+        "inperson virtual";
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        text-align: center;
+        padding-top: $espacio-extragrande;
+        padding-bottom: $espacio-mediano;
+    }
+}
+
